@@ -1,0 +1,4 @@
+7
+
+all oocurrences of word todo in all .md files in one command:
+find . -type f -name "*.md" | xargs grep -o "TODO" | grep -c "TODO" > todos.txt
